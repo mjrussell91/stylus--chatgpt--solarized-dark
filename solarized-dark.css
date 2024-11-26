@@ -79,7 +79,7 @@ div.z-50:nth-child(1) > div:nth-child(-n+4):hover {
 }
 
 /* invert avatar from obnoxious pink colour */
-#radix-\:r1i\:>div:nth-child(1)>div:nth-child(1)>img:nth-child(1),
-#radix-\:r2i\:>div:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
+/* #radix-\:r1i\:>div:nth-child(1)>div:nth-child(1)>img:nth-child(1) */
+[id^="radix"]>div:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
     filter: invert(1);
 }
