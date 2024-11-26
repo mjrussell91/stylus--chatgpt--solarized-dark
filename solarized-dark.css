@@ -1,0 +1,48 @@
+@-moz-document url-prefix("https://chatgpt.com/") {
+  :root {
+    /* http://www.zovirl.com/2011/07/22/solarized_cheat_sheet/ */
+    --bg-dark:#002b36;
+    --bg-light: #073642;
+    --font-dark: #93a1a1
+    --font-light: #839496;
+    --gray-dark:  #839496;
+    --gray-light: #657b83;
+      
+    --main-surface-primary: var(--bg-dark);
+    --main-surface-secondary: var(--bg-light);
+    --main-surface-tertiary: var(--bg-dark);
+    --main-surface-background: var(--bg-light);
+      
+    --message-surface: var(--bg-light);
+      
+    --sidebar-surface-primary: var(--bg-light);
+    --sidebar-surface-secondary: var(--bg-dark);
+      
+    --text-primary: var(--font-light);
+    --text-secondary: var(--font-dark);
+    /* --text-tertiary: var(--font);
+    --text-quaternary: var(--font);
+    --text-placeholder: hsla(0,0%,100%,.8); */
+      
+      
+     /* font-family: hack !important; */
+  }
+  
+  code {
+      background-color: var(--bg-light) !important;
+  }
+  
+  .bg-token-sidebar-surface-primary {
+      background-color: var(--bg-dark) !important;
+  }
+  
+  .bg-token-main-surface-primary {
+      background-color: var(--bg-dark) !important;
+  }
+  
+  @font-face {
+      font-family: hack;
+      font-style: normal;
+      src: url("https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/fonts/hack-regular.woff");
+  }
+}
