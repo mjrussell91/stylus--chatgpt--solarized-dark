@@ -1,35 +1,47 @@
 :root {
-  /* http://www.zovirl.com/2011/07/22/solarized_cheat_sheet/ */
-  --bg-dark:#002b36;
-  --bg-light: #073642;
-  --font-dark: #93a1a1;
-  --font-light: #839496;
-  --gray-dark:  #839496;
-  --gray-light: #657b83;
-    
-  --main-surface-primary: var(--bg-dark);
-  --main-surface-secondary: var(--bg-light);
-  --main-surface-tertiary: var(--bg-dark);
-  --main-surface-background: var(--bg-light);
-    
-  --message-surface: var(--bg-light);
-    
-  --sidebar-surface-primary: var(--bg-light);
-  --sidebar-surface-secondary: var(--bg-dark);
-    
-  --text-primary: var(--font-light);
-  --text-secondary: var(--font-dark);
+    /* http://www.zovirl.com/2011/07/22/solarized_cheat_sheet/ */
+    /* Solarized colour palette */
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base0: #839496;
+    --base1: #93a1a1;
+    --base2: #eee8d5;
+    --base3: #fdf6e3;
+    --yellow: #b58900;
+    --orange: #cb4b16;
+    --red: #dc322f;
+    --magenta: #d33682;
+    --violet: #6c71c4;
+    --blue: #268bd2;
+    --cyan: #2aa198;
+    --green: #859900;
+
+    --main-surface-primary: var(--base03);
+    --main-surface-secondary: var(--base02);
+    --main-surface-tertiary: var(--base03);
+    --main-surface-background: var(--base02);
+
+    --message-surface: var(--base02);
+
+    --sidebar-surface-primary: var(--base02);
+    --sidebar-surface-secondary: var(--base03);
+
+    --text-primary: var(--base1);
+    --text-secondary: var(--base0);
 }
 
 .bg-token-sidebar-surface-primary {
-    background-color: var(--bg-dark) !important;
+    background-color: var(--base03) !important;
 }
 
 .bg-token-main-surface-primary {
-    background-color: var(--bg-dark) !important;
+    background-color: var(--base03) !important;
 }
 
 /* invert avatar from obnoxious pink colour */
-#radix-\:r1i\: > div:nth-child(1) > div:nth-child(1) > img:nth-child(1), #radix-\:r2i\: > div:nth-child(1) > div:nth-child(1) > img:nth-child(1) {
+#radix-\:r1i\:>div:nth-child(1)>div:nth-child(1)>img:nth-child(1),
+#radix-\:r2i\:>div:nth-child(1)>div:nth-child(1)>img:nth-child(1) {
     filter: invert(1);
 }
