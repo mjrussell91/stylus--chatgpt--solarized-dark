@@ -17,7 +17,8 @@
     --blue: #268bd2;
     --cyan: #2aa198;
     --green: #859900;
-
+    
+    /* Variable replacements */
     --main-surface-primary: var(--base03);
     --main-surface-secondary: var(--base02);
     --main-surface-tertiary: var(--base03);
@@ -28,16 +29,53 @@
     --sidebar-surface-primary: var(--base02);
     --sidebar-surface-secondary: var(--base03);
 
-    --text-primary: var(--base1);
-    --text-secondary: var(--base0);
+    --text-primary: var(--base2);
+    --text-secondary: var(--base3);
+    --text-tertiary: var(--base1);
+    
+    /* Full variable list */
+    /* --main-surface-background: rgba(33,33,33,.9);
+    --message-surface: rgba(50,50,50,.85);
+    --dot-color: var(--white);
+    --text-primary: var(--gray-100);
+    --text-secondary: var(--gray-400);
+    --text-tertiary: var(--gray-500);
+    --text-quaternary: var(--gray-600);
+    --text-placeholder: hsla(0,0%,100%,.8);
+    --text-error: #f93a37;
+    --border-xlight: hsla(0,0%,100%,.05);
+    --border-light: hsla(0,0%,100%,.1);
+    --border-medium: hsla(0,0%,100%,.15);
+    --border-heavy: hsla(0,0%,100%,.2);
+    --border-xheavy: hsla(0,0%,100%,.25);
+    --border-sharp: hsla(0,0%,100%,.05);
+    --main-surface-primary: var(--gray-800);
+    --main-surface-primary-inverse: var(--white);
+    --main-surface-secondary: var(--gray-750);
+    --main-surface-tertiary: var(--gray-700);
+    --sidebar-surface-primary: var(--gray-900);
+    --sidebar-surface-secondary: var(--gray-800);
+    --sidebar-surface-tertiary: var(--gray-750);
+    --sidebar-title-primary: hsla(0,0%,94%,.5);
+    --sidebar-body-primary: #ededed;
+    --sidebar-icon: #a4a4a4;
+    --link: #7ab7ff;
+    --link-hover: #5e83b3;
+    --surface-error: 287 58 55; */
 }
 
-.bg-token-sidebar-surface-primary {
+/* Class replacements */
+
+.bg-token-sidebar-surface-primary, .bg-token-main-surface-primary {
     background-color: var(--base03) !important;
 }
 
-.bg-token-main-surface-primary {
-    background-color: var(--base03) !important;
+code, button {
+    background-color: var(--base02) !important;
+}
+
+div.z-50:nth-child(1) > div:nth-child(-n+4):hover {
+    background-color: var(--base02);
 }
 
 /* invert avatar from obnoxious pink colour */
